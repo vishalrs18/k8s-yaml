@@ -15,4 +15,4 @@ spec:
     spec:
       containers:  
         - name: apps
-          image: vishal18doc/vishalnew18:2
+          image: https://hub.docker.com/repository/docker/vishal18doc/vishalnew18
