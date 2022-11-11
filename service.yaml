@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: aks-service
 spec:
-selector:
+ selector:
   matchLabels: 
     name: app
   type: LoadBalancer
