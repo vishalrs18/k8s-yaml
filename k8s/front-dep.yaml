@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: react
+          image: vishal18doc/front:12
+          env:
+            - name: BACK_ADDRESS
+              value: "10.0.147.220"
+ #   volumeMounts:
+        #    - mountPath: /code
+       #       name: pvc
+      #volumes:
+       # - name: pvc
+        #  persistentVolumeClaim:
+         #   claimName: pvc
+
+
+
